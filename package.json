@@ -2,6 +2,7 @@
   "name": "bingo-app",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://pavvyyy.github.io/bingo",
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -10,6 +11,8 @@
     "canvas-confetti": "^1.5.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
